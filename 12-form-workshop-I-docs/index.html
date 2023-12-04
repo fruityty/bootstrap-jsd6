@@ -29,32 +29,37 @@
   <body>
     <div class="container vh-100 d-flex align-items-center justify-content-center">
       <!-- Big container -->
-      <div class="container d-flex-column align-items-center justify-content-center w-50 bg-dark">
+      <div class="container w-50">
         <!-- sub top container -->
-        <div class="bg-primary text-center ">
-          <p class="text">Try it free 7 days</p> 
-          <p>then $20/mo. thereafter</p>
+        <div class="text-center rounded-3 purple py-3 fw-medium mb-3 d-flex-column">
+          <p class="text-white">Try it free 7 days <span class="text-light">then $20/mo. thereafter</span></p>
         </div>
         <!-- sub bot container -->
-        <div class="bg-warning d-flex justify-content-center p-4 w-100">
-          <form>
+        
+          <form class="form bg-white rounded-3 p-4 has-validation">
+
             <div class="input-group mb-3">
-              <input type="text" class="form-control" aria-label="First Name" placeholder="First Name">
+              <input type="text" class="form-control" aria-label="First Name" placeholder="First Name" required />
             </div>
             <div class="input-group mb-3">
-              <input type="text" class="form-control" aria-label="Last Name" placeholder="Last Name">
+              <input type="text" class="form-control" aria-label="Last Name" placeholder="Last Name" required />
             </div>
             <div class="input-group mb-3">
-              <input type="text" class="form-control" aria-label="Email Address" placeholder="Email Address">
+              <input type="email" class="form-control" aria-label="Email Address" placeholder="Email Address" required />
             </div>
             <div class="input-group mb-3">
-              <input type="text" class="form-control" aria-label="Password" placeholder="Password">
+              <input type="password" class="form-control" aria-label="Password" placeholder="Password" required />
+            </div>
+            <div class="text-center mb-3">
+              <button type="submit" class="btn btn-success w-100">CLAIM YOUR FREE TRIAL</button>
             </div>
             <div class="text-center">
-              <button type="button" class="btn btn-success w-100">CLAIM YOUR FREE TRIAL</button>
+              by clicking the button you are agreeing to our <a href="#"
+                class="text-danger link-underline link-underline-opacity-0">Terms and Services</a>
             </div>
+
           </form>
-        </div>
+        
       </div>
     </div>
   </body>
